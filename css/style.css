@@ -47,3 +47,69 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor-container {
+  width: 80%;
+  height: 80%;
+  margin: 100px 50px;
+  background-color: rgb(196, 164, 255);
+  border-radius: 10px;
+}
+
+.editor-heading {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 20px 0;
+  font-size: 40px;
+}
+
+.editor-body {
+  box-sizing: border-box;
+  position: relative;
+  width: 80%;
+  height: 70%;
+  background-color: rgb(224, 207, 255);
+  margin: 10px auto;
+  border: 2px solid rgb(55, 52, 52);
+  padding: 10px;
+}
+
+.control-panel {
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(55, 52, 52);
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 10px;
+}
+
+/* text-area */
+.text-area {
+  width: auto;
+  height: 85%;
+  padding: 10px;
+}
+
+.text-area textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+}
