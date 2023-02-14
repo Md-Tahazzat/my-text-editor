@@ -99,6 +99,30 @@ body {
   margin: 0 10px;
 }
 
+.control-panel button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.text-decoration :nth-child(2) {
+  font-style: italic;
+}
+.text-decoration :last-child {
+  text-decoration: underline;
+}
+.text-size :first-child {
+  width: 40px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+.text-size :nth-child(2) {
+  width: auto;
+}
+
 /* text-area */
 .text-area {
   width: auto;
@@ -112,4 +136,35 @@ body {
   width: 100%;
   height: 100%;
   resize: none;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* utilities classes */
+.font-bold {
+  font-weight: bold;
+}
+.font-italic {
+  font-style: italic;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-transform {
+  text-transform: uppercase;
 }

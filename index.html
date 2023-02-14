@@ -8,31 +8,49 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/7a263e28c3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="editor-container">
       <h1 class="editor-heading">My Text Editor</h1>
       <div class="editor-body">
         <div class="control-panel">
-          <div class="controls decoration">
-            <p>B</p>
-            <p>I</p>
-            <p>U</p>
+          <div class="controls text-decoration">
+            <button onclick="fontBold()">B</button>
+            <button onclick="fontItalic()">I</button>
+            <button onclick="textUnderline()">U</button>
           </div>
-          <div class="controls">
-            <p>B</p>
-            <p>I</p>
-            <p>U</p>
-            <p>U</p>
+          <div class="controls text-align">
+            <button onclick="textLeft()">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button onclick="textCenter()">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button onclick="textRight()">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button onclick="textJustify()">
+              <i class="fa-solid fa-align-justify"></i>
+            </button>
           </div>
-          <div class="controls">
-            <p>B</p>
-            <p>I</p>
-            <p>U</p>
+          <div class="controls text-size">
+            <input type="number" value="16" name="" id="font-size" />
+            <button onclick="textTransform()">aA</button>
+            <input type="color" value="#FFFFF" id="text-color" />
           </div>
         </div>
         <div class="text-area">
-          <textarea name="" id="text-area"></textarea>
+          <textarea
+            name=""
+            placeholder="Enter your text here"
+            id="text-area"
+          ></textarea>
         </div>
       </div>
     </div>
